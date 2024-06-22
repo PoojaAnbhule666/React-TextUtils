@@ -13,7 +13,6 @@ import {
   Link
 } from "react-router-dom";
 
-
 function App() {
   const [mode, setmode] = useState("light");
   const [alert, setAlert] = useState(null);
@@ -42,6 +41,7 @@ function App() {
       // setInterval(() => {
       //   document.title = 'install textutils'
       // }, 2000);
+
     } else {
       setmode("light");
       document.body.style.backgroundColor = "white";
@@ -63,6 +63,7 @@ function App() {
         <Routes>
        
             <Route path="/about" element={<AboutUs/>} />
+            
             <Route
               exact path="/"
               element={
